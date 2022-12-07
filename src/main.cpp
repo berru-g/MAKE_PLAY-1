@@ -3,7 +3,6 @@
   githb/berru-g 22
 */
 
-
 // Use if using with ATmega32U4 - Micro, Pro Micro, Leonardo...
 #include <Arduino.h>
 #include "MIDIUSB.h"
@@ -22,11 +21,11 @@ unsigned long lastDebounceTime[NButtons] = {0}; // the last time the output pin 
 unsigned long debounceDelay = 5;                //* the debounce time; increase if the output flickers
 
 // potentiometers
-const int NPots = 12;                                                   //*
-int potPin[NPots] = {A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11}; //* Pin where the potentiometer is
-int potCState[NPots] = {0};                                             // Current state of the pot
-int potPState[NPots] = {0};                                             // Previous state of the pot
-int potVar = 0;                                                         // Difference between the current and previous state of the pot
+const int NPots = 11;                                               //*
+int potPin[NPots] = {A0, A1, A2, A3, A4, A5, A6, A7, A8, A10, A11}; //* Pin where the potentiometer is
+int potCState[NPots] = {0};                                         // Current state of the pot
+int potPState[NPots] = {0};                                         // Previous state of the pot
+int potVar = 0;                                                     // Difference between the current and previous state of the pot
 
 int midiCState[NPots] = {0}; // Current state of the midi value
 int midiPState[NPots] = {0}; // Previous state of the midi value
@@ -133,12 +132,11 @@ void buttons()
 // POTENTIOMETERS
 void potentiometers()
 {
-
   for (int i = 0; i < NPots; i++)
   { // Loops through all the potentiometers
 
     potCState[i] = analogRead(potPin[i]);               // Reads the pot and stores it in the potCState variable
-    midiCState[i] = map(potCState[i], 0, 1023, 127, 0); // Maps the reading of the potCState to a value usable in midi
+    midiCState[i] = map(potCState[i], 0, 1023, 0, 127); // Maps the reading of the potCState to a value usable in midi
 
     potVar = abs(potCState[i] - potPState[i]); // Calculates the absolute value between the difference between the current and previous state of the pot
 
@@ -162,12 +160,14 @@ void potentiometers()
     { // If the potentiometer is still moving, send the change control
       if (midiPState[i] != midiCState[i])
       {
-
         // use if using with ATmega328 (uno, mega, nano...)
         // do usbMIDI.sendControlChange if using with Teensy
         //  MIDI.sendControlChange(cc + i, midiCState[i], midiCh); // cc number, cc value, midi channel
 
         // use if using with ATmega32U4 (micro, pro micro, leonardo...)
+        Serial.println(cc);
+        Serial.println(midiCState[i]);
+        Serial.println();
         controlChange(midiCh, cc + i, midiCState[i]); //  (channel, CC number,  CC value)
         MidiUSB.flush();
 
@@ -181,7 +181,8 @@ void potentiometers()
 
 void loop()
 {
-
+  MidiUSB.read();
   buttons();
   potentiometers();
+  delay(3);
 }
