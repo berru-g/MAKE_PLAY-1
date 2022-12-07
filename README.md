@@ -7,14 +7,13 @@ https://berru-g.github.io/Make-Play/
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>make&amp;play PLAN</title>
+  <title>make and play PLAN</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
 
 <body class="stackedit">
   <div class="stackedit__html"><h1 align="center">
-  <a href="https://berru-g.github.io/Make-Play/"><img src="https://github.com/berru-g/Make-Play/blob/main/src/dod.gif?raw=true
-    " width="500px" title="     Revenir au site"></a>
+  <a href="https://berru-g.github.io/Make-Play/"><img src="https://github.com/berru-g/MAKE_PLAY-1/blob/master/img/pcb-face.jpg?raw=true" width="500px" title="     Revenir au site"></a>
   <br>Make &amp; Play <br>
 </h1>
 <h4 align="center">Controller USB - midi _ V 1.0.1</h4>
