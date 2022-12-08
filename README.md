@@ -60,7 +60,7 @@ Use if using with ATmega32U4 - Micro, Leonardo...
     
 <p>When you are ready to play, configure your M&P as below. Select option, preference,Audio & link-midi. Important, choose the 9600 sampling frequency carefully for better optimization.</p>
     
-<p align="center"><img src="https://github.com/berru-g/Make-play-PLAN/blob/main/src/input.png?raw=true"  alt="github.com/berru-g"></p>
+<p align="center"><img src="https://github.com/berru-g/MAKE_PLAY-1/blob/master/img/CONFIG-Ableton%20(2).png?raw=true"  alt="github.com/berru-g"></p>
 <p align="center"><img src="https://github.com/berru-g/Make-play-PLAN/blob/main/src/bault.png?raw=true"  alt="github.com/berru-g"></p>
     
     
