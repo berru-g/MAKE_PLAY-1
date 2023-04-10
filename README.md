@@ -55,6 +55,8 @@ Use if using with ATmega32U4 - Micro, Leonardo...
 <p>Despite the simplicity, it necessary to specify to take precautions concerning the assembly, because the facade is fragile. I advise you to follow the plan to have a solid tool once fixed to its support.</p>
     
 <p align="center"><img src="https://github.com/berru-g/Microcontroller-USB-midi/blob/main/SHIELDFACE.png?raw=true" width="400px" alt="github.com/berru-g"></p>
+<img width="644" alt="multi-layer1" src="https://user-images.githubusercontent.com/61543927/230877531-184f9646-a850-4e15-8ea6-a71579c1232b.png">
+
     
 <h3 id="step-3">Step 3 - config in Ableton® -</h3>
     
@@ -69,7 +71,14 @@ Use if using with ATmega32U4 - Micro, Leonardo...
     
 <p>Share your creation with the hastagh #make&play</p>
 <p>For that choice <a href="https://berru-g.github.io/Make-Play/">your colori</a></p>
+
+
+    ![cube9X9](https://user-images.githubusercontent.com/61543927/230877634-449adabe-6d62-44ba-b0db-874b72cef1e6.jpg)
     
+![cube9X92](https://user-images.githubusercontent.com/61543927/230877667-dc64b39c-7cfd-437f-bf58-4c989d6d14ae.jpg)
+
+![xiao16](https://user-images.githubusercontent.com/61543927/230877689-df614081-7216-4994-91ec-14582bbfe0c3.jpg)
+
     
 <h2 align="center"> 2020 v-1.0.1</h2>
 <p><a href="https://berru-g.github.io/Make-Play/">Make and play</a>  is Free, for used and/or modify it under the terms of the <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License</a> .</p>
